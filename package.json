@@ -1,10 +1,13 @@
 {
   "name": "emarsys-timezones",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Provides timezones to use in the products of Emarsys",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "release-patch": "npm version patch -m 'chore(package): update version to %s'",
+    "release-minor": "npm version minor -m 'chore(package): update version to %s'",
+    "release-major": "npm version major -m 'chore(package): update version to %s'"
   },
   "repository": {
     "type": "git",
