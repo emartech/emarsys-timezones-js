@@ -1,0 +1,19 @@
+{
+  "name": "emarsys-timezones",
+  "version": "1.0.0",
+  "description": "Provides timezones to use in the products of Emarsys",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emartech/emarsys-timezones-js.git"
+  },
+  "author": "Emarsys",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emartech/emarsys-timezones-js/issues"
+  },
+  "homepage": "https://github.com/emartech/emarsys-timezones-js#readme"
+}
