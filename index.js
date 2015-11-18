@@ -1,21 +1,21 @@
 'use strict';
 
-module.exports = {
-  timezones: require('./timezones.json'),
+var timezones = require('./timezones.json');
 
+module.exports = {
 
   getLongValues: function() {
-    return this.timezones;
+    return timezones;
   },
 
 
   getLongValue: function(timezone) {
-    return this.timezones[timezone];
+    return timezones[timezone];
   },
 
 
   getShortValues: function() {
-    return Object.keys(this.timezones)
+    return Object.keys(timezones)
       .reduce(function(timezonesWithShortValues, key) {
         timezonesWithShortValues[key] = this.getShortValue(key);
         return timezonesWithShortValues;
@@ -24,6 +24,6 @@ module.exports = {
 
 
   getShortValue: function(timezone) {
-    return this.timezones[timezone].split(' ')[0];
+    return timezones[timezone].split(' ')[0];
   }
 };
